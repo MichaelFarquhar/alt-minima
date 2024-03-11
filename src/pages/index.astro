@@ -1,16 +1,20 @@
 ---
-
+import { Icon } from 'astro-icon/components';
 ---
 
 <html lang="en" data-theme="business">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Astro</title>
+        <title>Alt Minima | Minimal Elegant Design</title>
     </head>
     <body>
-        <h1>Astro</h1>
+        <div class="h-screen w-full flex flex-col items-center justify-center group">
+            <h1>Alt Minima</h1>
+            <p>Minimal Elegance in graphic design and print.</p>
+            <Icon name="iconamoon:mouse" class="w-8 h-8 group-hover:animate-bounce" />
+        </div>
     </body>
 </html>
