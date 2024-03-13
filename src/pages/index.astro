@@ -8,13 +8,41 @@ import { Icon } from 'astro-icon/components';
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
         <title>Alt Minima | Minimal Elegant Design</title>
     </head>
     <body>
-        <div class="h-screen w-full flex flex-col items-center justify-center group">
-            <h1>Alt Minima</h1>
-            <p>Minimal Elegance in graphic design and print.</p>
-            <Icon name="iconamoon:mouse" class="w-8 h-8 group-hover:animate-bounce" />
+        <div>
+            <div
+                class="h-screen w-full px-6 flex flex-col items-center justify-center group"
+            >
+                <img
+                    class="mb-8 w-full md:w-1/2"
+                    src="/AltMinimaLogo.svg"
+                    alt="Alt Minima logo"
+                />
+                <p
+                    style="font-family: 'Titillium Web';"
+                    class="text-center uppercase font-medium text-lg md:text-2xl text-th-font"
+                >
+                    Minimal Elegance in graphic design and print
+                </p>
+                <Icon
+                    name="iconamoon:mouse"
+                    class="mt-24 w-8 h-8 group-hover:animate-bounce"
+                />
+            </div>
+            <div
+                class="h-screen w-full px-6 flex flex-col items-center justify-center group bg-white"
+            >
+                <h1 class="text-3xl text-center">ONLINE DISTRIBUTORS</h1>
+            </div>
         </div>
     </body>
 </html>
