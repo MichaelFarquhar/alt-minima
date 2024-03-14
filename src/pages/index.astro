@@ -1,8 +1,10 @@
 ---
-import { Icon } from 'astro-icon/components';
+import ScrollSection from '../layouts/ScrollSection.astro';
+import HomeSection from '../sections/HomeSection.astro';
+import StoreSection from '../sections/StoreSection.astro';
 ---
 
-<html lang="en" data-theme="business">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -20,30 +22,12 @@ import { Icon } from 'astro-icon/components';
     </head>
     <body>
         <div id="main" class="scroll-container">
-            <section
-                class="h-screen w-full px-6 flex flex-col items-center justify-center group"
-            >
-                <img
-                    class="mb-8 w-full md:w-1/2"
-                    src="/AltMinimaLogo.svg"
-                    alt="Alt Minima logo"
-                />
-                <p
-                    style="font-family: 'Titillium Web';"
-                    class="text-center uppercase font-medium text-lg md:text-2xl text-th-font"
-                >
-                    Minimal Elegance in graphic design and print
-                </p>
-                <Icon
-                    name="iconamoon:mouse"
-                    class="mt-24 w-8 h-8 group-hover:animate-bounce"
-                />
-            </section>
-            <section
-                class="h-screen w-full px-6 flex flex-col items-center justify-center group bg-white"
-            >
-                <h1 class="text-3xl text-center">ONLINE DISTRIBUTORS</h1>
-            </section>
+            <ScrollSection>
+                <HomeSection />
+            </ScrollSection>
+            <ScrollSection>
+                <StoreSection />
+            </ScrollSection>
         </div>
 
         <script is:inline src="/full-page-scroll.js"></script>

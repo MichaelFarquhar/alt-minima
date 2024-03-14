@@ -5,11 +5,10 @@ export default {
         extend: {
             colors: {
                 'th-font': '#eeecdf',
+                'th-blue': '#a6becc',
+                'th-bg': '#1d232a',
             },
         },
-    },
-    daisyui: {
-        themes: ['light', 'dark', 'business'],
     },
     plugins: [require('daisyui')],
 };
