@@ -3,17 +3,23 @@ import StoreCard from './StoreCard.astro';
 ---
 
 <div class="w-full h-full flex flex-col items-center justify-between">
-    <nav class="w-full flex justify-center py-8 bg-th-bg">
-        <img class="w-40 md:w-52" src="/AltMinimaLogo.svg" alt="Alt Minima logo" />
+    <nav class="w-full flex justify-center py-10 bg-th-bg">
+        <img class="w-48 md:w-64" src="/AltMinimaLogo.svg" alt="Alt Minima logo" />
     </nav>
 
-    <div class="w-full flex flex-col space-y-6 items-center">
-        <h1 class="text-3xl text-center text-th-bg">Our Online Distributors</h1>
+    <div class="w-full flex flex-col items-center px-6">
+        <h1 class="text-4xl font-semibold text-center text-th-bg mb-5">
+            Our Online Distributors
+        </h1>
 
-        <div class="w-3/4 flex justify-between space-x-6">
-            <StoreCard title="Shopify" icon="shopify" />
-            <StoreCard title="Etsy" icon="etsy" />
-            <StoreCard title="Redbubble" icon="redbubble" />
+        <div class="h-1 w-24 bg-th-bg flex justify-center"></div>
+
+        <div
+            class="w-full sm:w-3/4 flex flex-col lg:flex-row justify-between gap-6 mt-10"
+        >
+            <StoreCard title="Shopify" icon="shopify" color="#1DB954" />
+            <StoreCard title="Etsy" icon="etsy" color="#F16521" />
+            <StoreCard title="Redbubble" icon="redbubble" color="#E41321" />
         </div>
     </div>
 
